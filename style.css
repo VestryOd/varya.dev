@@ -1,23 +1,54 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("src/fonts/Gilroy-ExtraBold.otf");
+}
+
 body {
+    /* colors' variables */
+    --lightgray: #F8F7F5;
+
     margin: 0;
     padding: 0;
+
     font-size: 20px;
     line-height: 160%;
     font-family: "Open Sans", "Tahoma", sans-serif;
     text-align: center;
+
+    background-color: var(--lightgray);
 }
 
-body:last-child {
-    margin-bottom: 80px;
+header {
+    height: 50px;
 }
+
+.content-wrapper {
+    width: 100%;
+
+    background-color: white;
+}
+
+/*TODO: создать класс вместо .content для параметров display, width, max-width,
+   чтобы применить его к header*/
 
 .content {
     display: inline-block;
     width: 80%;
     max-width: 1024px;
     padding-top: 40px;
+    padding-bottom: 80px;
 
     text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
 h2,
@@ -63,22 +94,22 @@ ul li {
     list-style: none;
 }
 
-header {
+.cv-heading {
     margin-bottom: 50px;
 }
 
-header p,
-header p a,
+.cv-heading p,
+.cv-heading p a,
 a {
     color: black;
 }
 
 a:hover {
-    opacity: 50%;
+    opacity: 70%;
 }
 
 @media (max-width: 1024px) {
-    header {
+    .cv-heading {
         text-align: center;
     }
 }
