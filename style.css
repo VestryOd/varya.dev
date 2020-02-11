@@ -4,7 +4,6 @@
 }
 
 body {
-    /* colors' variables */
     --lightgray: #F8F7F5;
 
     margin: 0;
@@ -18,9 +17,42 @@ body {
     background-color: var(--lightgray);
 }
 
+
+
+
 header {
-    height: 50px;
+    padding: 10px 0;
 }
+
+header > * {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 0.7em;
+    line-height: 90%;
+    text-transform: lowercase;
+}
+
+header > *,
+header nav > a {
+    margin-right: 70px;
+}
+
+header > *:last-child,
+header nav > a:last-child {
+    margin-right: 0;
+}
+
+header nav {
+    margin-bottom: 0.5%;
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+
 
 .content-wrapper {
     width: 100%;
@@ -47,7 +79,7 @@ h3,
 h4,
 h5,
 h6,
-nav {
+header {
     font-family: "Gilroy", "Tahoma", sans-serif;
 }
 
@@ -104,8 +136,12 @@ a {
     color: black;
 }
 
-a:hover {
+a:hover:not([class="current-page"]) {
     opacity: 70%;
+}
+
+a.current-page {
+    cursor: default;
 }
 
 @media (max-width: 1024px) {
@@ -131,6 +167,11 @@ a:hover {
 }
 
 @media (max-width: 585px) {
+    header > *,
+    header nav > a {
+        margin-right: 30px;
+    }
+
     h1 {
         font-size: 250%;
         line-height: 100%;
