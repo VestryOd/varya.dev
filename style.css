@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap&subset=cyrillic');
+
 @font-face {
     font-family: "Gilroy";
-    src: url("src/fonts/Gilroy-ExtraBold.otf");
+    src: url("./src/fonts/Gilroy-ExtraBold.otf");
 }
 
 body {
@@ -54,7 +56,8 @@ header a {
 
 
 
-.content-wrapper {
+.content-wrapper,
+main {
     width: 100%;
 
     background-color: white;
@@ -136,8 +139,8 @@ a {
     color: black;
 }
 
-a:hover:not([class="current-page"]) {
-    opacity: 70%;
+a:not([class="current-page"]):hover {
+    opacity: 0.5;
 }
 
 a.current-page {
@@ -218,4 +221,91 @@ ul.contacts li.icons {
 
     background-color: #F8F7F5;
     color: black;
+}
+
+
+/* BLOG */
+
+main {
+    box-sizing: border-box;
+}
+
+h1.blog-title {
+    margin: 0;
+    padding: 80px 0;
+
+    text-align: center;
+}
+
+h1.blog-title.light {
+    color: white;
+}
+
+h1.blog-title.dark {
+    color: black;
+}
+
+h1.blog-title.buro {
+    background: url("./blog/buro/cover.jpg") no-repeat center center;
+}
+
+main h2 {
+    margin-top: 30px;
+    color: black;
+}
+
+
+
+main {
+    text-align: left;
+    padding-bottom: 80px;
+}
+
+main > * {
+    box-sizing: border-box;
+    padding: 30px 40px 0;
+    margin: 0;
+}
+
+main p img.float-left {
+    display: block;
+    float: left;
+    padding-right: 20px;
+    height: 80px;
+}
+
+main p.cite,
+main figure figcaption {
+    color: gray;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+main ol,
+main ul {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main figure {
+    padding: 0;
+    margin: 30px 40px 0;
+    width: fit-content;
+
+    background-color: var(--lightgray);
+}
+
+main figure figcaption {
+    padding: 0 10px 10px;
+
+    text-align: center;
 }
