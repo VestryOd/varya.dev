@@ -181,6 +181,14 @@ a.current-page {
         line-height: 100%;
     }
 
+    h1.blog-title {
+        padding: 80px 20px;
+    }
+
+    main > * {
+        padding: 30px 20px 0;
+    }
+
     .photo {
         width: calc(var(--photo-size)/1.2);
         height: calc(var(--photo-size)/1.2);
@@ -233,7 +241,7 @@ main {
 
 h1.blog-title {
     margin: 0;
-    padding: 80px 0;
+    padding: 80px 40px;
 
     text-align: center;
 }
@@ -264,7 +272,7 @@ main {
 
 main > * {
     box-sizing: border-box;
-    padding: 30px 40px 0;
+    padding: 30px 30px 0;
     margin: 0;
 }
 
