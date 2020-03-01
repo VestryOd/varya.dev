@@ -46,7 +46,7 @@ header nav > a:last-child {
 }
 
 header nav {
-    margin-bottom: 0.4%;
+    margin-bottom: 0.2%;
 }
 
 header a {
@@ -144,6 +144,7 @@ a:not([class="current-page"]):hover {
 }
 
 a.current-page {
+    opacity: 0.5;
     cursor: default;
 }
 
